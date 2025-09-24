@@ -6,35 +6,41 @@
 #include<iostream>
 using namespace std;
 
-void swap(int &x, int &y) 
+void swap(int A, int B) 
 {
     int temp;
-    temp = x;
-    x = y;
-    y = temp;
-    return;
+    temp = A;
+    A = B;
+    B = temp;
+    cout << "Value of A,B After Swapping:" << endl;
+    cout << "A = " << A << endl << "B = " << B << endl << endl;
 }
 
 int main()
 {
-    int A = 100 , B = 200;
+    int A = 100, B = 200;
+
+    cout << "*CALL BY VALUE*" << endl << endl;
+
+    cout << "Value of A,B Before Swapping :- " << endl;
+    cout << "A = " << A << endl << "B = " << B << endl << endl;
+
+    swap(A, B); 
     
-    cout<<"*CALL BY REFERENCE*"<<endl<<endl;
-    cout<<"Value of A,B Before Swapping :- "<<endl<<"A = "<<A<<endl<<"B = "<<B<<endl<<endl;
-    swap(A,B);
-    cout<<"Value of A,B After Swapping :- "<<endl;
-    cout<<"A = "<<A<<endl<<"B = "<<B;
+    return 0;
 }
 
-Output :-
-*CALL BY REFERENCE*
+Output :- 
+*CALL BY VALUE*
 
-Value of A,B Before Swapping :- 
+Value of A, B Before Swapping :- 
 A = 100
 B = 200
 
-Value of A,B After Swapping :- 
+Value of A,B After Swapping:
 A = 200
 B = 100
 
-=== Code Execution Successful ===
+
+
+=== Code Execution Successful ===    
