@@ -4,8 +4,8 @@
 ---
 
 🔄 Q1. Swapping Using Call by Value
-✅ Aim
 
+✅ Aim
 To swap two numbers using the call by value method.
 
 📚 Theory
